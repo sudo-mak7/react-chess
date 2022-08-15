@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h2, h3 {
+  padding: 15px;
+  text-align: center;
+}
+
+.button {
+  width: 512px;
+  height: 32px;
+  margin-top: 30px;
+  background-color: #1fcaf9;
+  border: none;
+}
+
+.button:active {
+  background-color: rgba(31, 202, 249, .8);
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.board {
+  width: calc(64px * 8);
+  height: calc(64px * 8);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cell {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cell img {
+  height: 48px;
+  position: relative;
+  pointer-events: none;
+  user-select: none;
+}
+
+.black {
+  background-color: #1fcaf9;
+}
+
+.white {
+  background-color: white;
+}
+
+.selected {
+  background-color: springgreen;
+}
+
+.available {
+  width: 64px;
+  height: 64px;
+  outline: solid springgreen 4px;
+  outline-offset: -8px;
+}
+
+.target {
+  background: indianred;
+}
+
+.sidebar {
+  height: 572px;
+  width: 235px;
+  margin: 0 30px;
+  background-color: #282c34;
+  color: white;
+}
+
+.sidebar-figures {
+  height: 34px;
+}
+
+.sidebar-figures-area {
+  margin: -5px 25px 0 25px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.outline {
+  outline: solid #1fcaf9 4px;
+  outline-offset: -2px;
+}
+
+.lost-figures {
+  margin: 5px 5px;
+  display: inline-block;
+}
+
+.lost-figures-field {
+  height: 458px;
+}
+
+.time-winner {
+  height: 128px;
+  color: white;
+  text-align: center;
+  background-color: #282c34;
+  position: absolute;
+  margin: 192px 96px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  z-index: 100;
+}
+
+.display-none {
+  display: none;
+}
